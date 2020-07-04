@@ -54,9 +54,11 @@
     </ul>
 
     <input type="button" value="Button1">
-    <input type="submit" value="Button1">
+    <input type="submit" value="Submit">
     <input type="text">
 
+    <a href="http://google.com">Google</a>
+    <a href="http://yahoo.com">Yahoo</a>
     </div>
 
     <script>
@@ -69,6 +71,12 @@
         $('ul#list li:last').css('color', 'green'); //allows to edit the last list item
         $('ul#list li:even').css('background-color', 'yellow');
         $('ul#list li:odd').css('background-color', '#cccccc');
+        $('ul#list li:nth-child(3n)').css('list-style', 'none'); //takes away bullet point
+        $(':submit').hide(); //hides the second button that has a type "submit"
+        //$(':text').hide();
+        $('a[href="http://yahoo.com"]').css('color', 'green'); //edits yours links attached to href
+        //$('*').hide(); this will hide everything
+
 
 
     </script>
